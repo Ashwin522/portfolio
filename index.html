@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<head>
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="myname.png" class="logo">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Projects</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <p>Grad Student at Syracuse University</p>
+                <h1>Hi, I'm Ashwin</h1>
+            </div>
+        </div>
+    </div>
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="aboutme.png" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class = "sub-title">About Me</h1>
+                    <p1 class="paragraph"> 
+                        "Embarking on a journey with technology from my 10th-grade computer science class, I discovered my passion for programming by crafting a simple calculator. This initial success fueled my curiosity, leading me to explore a spectrum of applications, websites, and computer games, recognizing their shared foundational principles.My interest in web development culminated in the creation of 'THE PING,' a unique social networking site. Shifting focus to Machine Learning during ethical hacking and Android development, I embarked on projects exploring data analysis. Engaging in co-curricular activities, I honed interpersonal skills through leadership roles in IEEE, hosting events, and excelling in sports and music. Interning at IISc, I simulated modulation techniques, showcasing my coding prowess. Motivated by a curiosity to understand technology's impact on business, I am eager to continue my journey, reflecting resilience, diverse skills, and unwavering commitment to a future as an AI Data Analyst."</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>ML Engineer</span><br>Developed an in cabin driver monitoring system using YOLOv5</li>
+                            <li><span>Research Intern</span><br>Simulated different digital modulation schemas on</li>
+                            <li><span>Simulation and model based design</span><br>Running different modulation scehmas on Matlab</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>ML Engineer</span><br>Developed an in cabin driver monitoring system using YOLOv5</li>
+                            <li><span>Research Intern</span><br>Simulated different digital modulation schemas on MatLab</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Computer Engineering</span><br>Syracuse University</li>
+                            <li><span>Electronics and Telecommunication Engineering</span><br>Ramaiah Institute of technology, Bangalore</li>
+                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="projects">
+        <div class="container">
+        <h1 class = "sub-title">Projects</h1>
+        <div class="projects-list">
+            <div>
+                <h2>Driver Monitoring System</h2>
+                <p> description blahlabsdkjfbakjdbfkjbkajsd</p>
+                <a href="driver.html">Learn more</a>           
+            </div>
+            <div>
+                <h2>Social Networking Website</h2>
+                <p> description blahlabsdkjfbakjdbfkjbkajsd</p>
+                <a href="social.html">learn more</a>
+            </div>
+            <div>
+                <h2>Brain trainer on Android</h2>
+                <p> description blahlabsdkjfbakjdbfkjbkajsd</p>
+                <a href="#">learn more</a>
+            </div>
+            <div>
+                <h2>Gmail Spam Detection Model</h2>
+                <p> description blahlabsdkjfbakjdbfkjbkajsd</p>
+                <a href="#">learn more</a>
+            </div>
+            <div>
+                <h2>Tic Tac Toe</h2>
+                <p> description blahlabsdkjfbakjdbfkjbkajsd</p>
+                <a href="#">learn more</a>
+            </div>
+        </div>
+    </div>
+    </div>
+    <!-----portfolio-->
+    <div id="portfolio">
+        <div class="container">
+
+        </div>
+    
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+    </script>
+</body>
+</html>
